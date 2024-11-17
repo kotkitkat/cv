@@ -6,12 +6,12 @@
 
 
     html {
-        cursor: url("лапа.png") 16 16, auto; 
+        cursor: url("raw.png") 16 16, auto; 
     }
 
 body {
     font-family: mv boli, sans-serif;
-    background-image: url('фон.png');
+    background-image: url('background.png');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;

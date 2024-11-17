@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+    html {
+        cursor: url("лапа.png") 16 16, auto; 
+    }
+
+body {
+    font-family: mv boli, sans-serif;
+    background-image: url('фон.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+p {
+    font-size: 20px;
+}
+
+.container {
+    max-width: 600px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: #262f20;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 128, 0, 0.9); /* Полупрозрачный зеленый фон */
+    
+}
+
+.header {
+    padding: 20px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+.content section {
+    background: #a5c847; /* Светлый полупрозрачный фон */
+    padding: 10px;
+}
+
+
+
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    font-style: italic;
+    margin-right: 5px;
+}
+
+@media (max-width: 500px) {
+    body {
+        background-attachment: scroll; /* Чтобы фоновая картинка прокручивалась на маленьких экранах */
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
